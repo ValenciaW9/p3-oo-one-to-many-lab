@@ -1,4 +1,3 @@
-
 class Owner:
     def __init__(self, name):
         self.name = name
@@ -12,7 +11,7 @@ class Owner:
         else:
             raise Exception("Invalid pet type. Only instances of the Pet class can be added as pets.")
 
-    def sort_pets_by_name(self):
+    def get_sorted_pets(self):
         return sorted(self.pets(), key=lambda pet: pet.name)
 
 
